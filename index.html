@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Delicioso</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/index.js"></script>
+</head>
+<body>
+    <nav class="nav" id="navbar">
+        <header><a href="/">Wi FooT</a></header>
+        <ul class="nav-links">
+          <li><a href="#Inicio">Inicio</a></li>
+          <li><a href="#Menú">Menú</a></li>
+          <li><a href="#Reservaciones">Reservación</a></li>
+          <li><a href="#Locales">Locales</a></li>
+        </ul>
+      </nav>
+    <main>
+        <section class="inicio" id="Inicio">
+            <h2>Bienvenidos a Wi FooT</h2>
+            <p>Disfruta de los mejores platillos con un ambiente acogedor.</p>
+            <img src="IMAGEN/FOOT.png" atl="Comida" loading="lazy">
+        </section>
+        
+        <section class="menu" id="Menú">
+            <h2>Nuestro Menú</h2>
+            <div class="menu-items">
+              <div class="menu-item">
+                <img src="IMAGEN/Pechuga.png" alt="Plato 1">
+                <h2>Plato 1</h2>
+                <p>loma con gaseosa</p>
+              </div>
+              <div class="menu-item">
+                <img src="IMAGEN/Pechuga.png" alt="Plato 2">
+                <h2>Pechuga de Pollo</h2>
+                <p>"Pechuga de pollo jugosa y tierna, dorada por fuera y acompañada de vegetales o puré."</p>
+              </div>
+              <div class="menu-item">
+                <img src="IMAGEN/Pechuga.png" alt="Plato 3">
+                <h2>Plato 3</h2>
+                <p>loma con gaseosa</p>
+              </div>
+            </div>
+            <div class="menu-items">
+              <div class="menu-item">
+                <img src="IMAGEN/Hamburguesa.png" alt="Plato 1">
+                <h2>Hamburguesa</h2>
+                <p>"Hamburguesa con carne jugosa, queso derretido, lechuga, tomate y pan crujiente."</p>
+              </div>
+              <div class="menu-item">
+                <img src="IMAGEN/Salchipapa.jpg" alt="Plato 2">
+                <h2>Salchipapa</h2>
+                <p>"Salchipapa con trozos de salchicha y papas fritas, acompañada de cremas al gusto."</p>
+              </div>
+              <div class="menu-item">
+                <img src="IMAGEN/Pechuga.png" alt="Plato 3">
+                <h2>Plato 3</h2>
+                <p>loma con gaseosa</p>
+              </div>
+            </div>
+          </section>
+          
+        
+        <section class="reservaciones" id="Reservaciones">
+            <h2>Reservación</h2>
+            <form>
+                <div class="linea">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required placeholder="nombre completo">
+                </div>
+                <div class="linea">
+                  <label for="fecha">Fecha:</label>
+                  <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="linea">
+                  <label for="personas">Num de personas:</label>
+                  <input type="number" id="personas" name="personas" min="1" max="10" required placeholder="max 10">
+                </div>
+                <div class="linea">
+                  <label for="opciones">Seleccione ubicación:</label>
+                  <select id="opciones" name="opciones">
+                    <option value="opcion1"></option>
+                    <option value="opcion2">Molina</option>
+                    <option value="opcion3">Surco</option>
+                    <option value="opcion4">Miraflores</option>
+                    <option value="opcion4">Huachipa</option>
+                </select>
+               </div>
+              <div class="btn-container">
+               <button class="btn">Reservar</button>
+              </div>
+            </form>
+        </section>
+        
+        <section class="locales" id="Locales">
+          <h2>Locales</h2>
+          <div class="local-info">
+              <p><i class="bi bi-geo-alt"></i> Calle Falsa 123, Ciudad</p>
+              <p><i class="bi bi-telephone"></i> 123-456-789</p>
+          </div>
+          <div class="local-info">
+              <p><i class="bi bi-geo-alt"></i> Dirección: Calle Falsa 123, Ciudad</p>
+              <p><i class="bi bi-telephone"></i> Teléfono: 123-456-789</p>
+          </div>
+          <div class="local-info">
+              <p><i class="bi bi-geo-alt"></i> Dirección: Calle Falsa 123, Ciudad</p>
+              <p><i class="bi bi-telephone"></i> Teléfono: 123-456-789</p>
+          </div>
+          <div class="local-info">
+              <p><i class="bi bi-geo-alt"></i> Dirección: Calle Falsa 123, Ciudad</p>
+              <p><i class="bi bi-telephone"></i> Teléfono: 123-456-789</p>
+          </div>
+          <div id="map"></div>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+      </section>
+    </main>  
+
+    <footer>
+        <p>&copy; 2025 Restaurante Wi FooT. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

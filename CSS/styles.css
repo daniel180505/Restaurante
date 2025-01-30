@@ -68,14 +68,45 @@ h2{
     color: #887b7b; 
 }
 
+.menu-toggle {
+    display: none;
+}
+
+/* Estilo del icono del menú */
+.menu-icon {
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+    display: none; /* Se muestra solo en pantallas pequeñas */
+}
+
+/* Estilo del menú en pantallas pequeñas */
 @media(max-width: 768px) {
     .nav-links {
+        display: none;
+        width: 50%;
         flex-direction: column;
         align-items: center;
+        background-color: rgb(229, 183, 153);
+        position: absolute;
+        top: 80px; /* Ajusta según la altura del navbar */
+        left: 50%;
+        padding: 10px 0;
     }
 
     .nav-links li {
-        margin: -1px 0;
+        margin: 10px 0;
+        color: #ff0000;
+    }
+
+    /* Mostrar el icono del menú en pantallas pequeñas */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Mostrar el menú cuando el checkbox está marcado */
+    .menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
     }
 }
 
@@ -209,7 +240,7 @@ h2{
     max-width: 400px;
     background-color: #a02f2f;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .menu-item img {
@@ -244,11 +275,12 @@ h2{
     .menu-items {
         gap: 15px; 
         justify-content: center; 
+        margin-bottom: 5px;
     }
 
     .menu-item {
         max-width: 90%;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
 
     .menu-item img {

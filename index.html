@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Delicioso</title>
+
+    <!------ WWWWWWWWP------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!------ BOOTSTRAP------>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!------ HOJAS DE ESTILOS------>
     <link rel="stylesheet" href="CSS/styles.css">
+
+    <!------ JS------>
     <script src="JS/index.js"></script>
 </head>
+
 <body>
+    <!-------------------- NAV -------------------->
     <nav class="nav" id="navbar">
         <header><a href="/">Wi FooT</a></header>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -22,51 +33,170 @@
     </nav>
 
     <main>
+
+      <!------------------ Inicio -------------------->
         <section class="inicio" id="Inicio">
-            <h2>Bienvenidos a Wi FooT</h2>
-            <p>Disfruta de los mejores platillos con un ambiente acogedor.</p>
+            <h2 data-aos="fade-up">Bienvenidos a Wi FooT</h2>
+            <p data-aos="fade-up">Disfruta de los mejores platillos con un ambiente acogedor.</p>
             <img src="IMAGEN/FOOT.png" atl="Comida" loading="lazy">
         </section>
         
+      <!------------------ MENU -------------------->
         <section class="menu" id="Menú">
             <h2>Nuestro Menú</h2>
-            <div class="menu-items">
-              <div class="menu-item">
-                <img src="IMAGEN/Pechuga.png" alt="Plato 1">
-                <h2>Plato 1</h2>
-                <p>loma con gaseosa</p>
+
+            <!------- Comidas --------->
+            <h3>Comidas</h3>
+            <div class="menu-items" >
+              <div class="menu-item" >
+                <img src="IMAGEN/Causa.png" alt="Causa de Pollo" loading="lazy">
+                <h2>Causa de Pollo</h2>
+                <p>S/.11.90</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
               </div>
-              <div class="menu-item">
-                <img src="IMAGEN/Pechuga.png" alt="Plato 2">
-                <h2>Pechuga de Pollo</h2>
-                <p>"Pechuga de pollo jugosa y tierna, dorada por fuera y acompañada de vegetales o puré."</p>
+              <div class="menu-item" >
+                <img src="IMAGEN/Chaufa.png" alt="Chaufa" loading="lazy">
+                <h2>Chaufa de Pollo</h2>
+                <p>S/.15.90</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
               </div>
-              <div class="menu-item">
-                <img src="IMAGEN/Pechuga.png" alt="Plato 3">
-                <h2>Plato 3</h2>
-                <p>loma con gaseosa</p>
+              <div class="menu-item" >
+                <img src="IMAGEN/Tallarin.png" alt="Tallarin" loading="lazy">
+                <h2>Tallarin</h2>
+                <p>S/.15.50</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+              <div class="menu-item" >
+                <img src="IMAGEN/CostillasDeCerdo.png" alt="CostillasDeCerdo" loading="lazy">
+                <h2>Costillas de Cerdo</h2>
+                <p>S/.20.90</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+              <div class="menu-item" >
+                <img src="IMAGEN/ArrozConPollo.png" alt="ArrozConPollo" loading="lazy">
+                <h2>Arroz con Pollo</h2>
+                <p>S/.18.90</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+              <div class="menu-item" >
+                <img src="IMAGEN/PapaRellena.png" alt="PapaRellena" loading="lazy">
+                <h2>Papa Rellena</h2>
+                <p>S/.10.50</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
               </div>
             </div>
+
+
+            <!------- Crocantes --------->
+            <h3>Crocantes</h3>
             <div class="menu-items">
               <div class="menu-item">
-                <img src="IMAGEN/Hamburguesa.png" alt="Plato 1">
+                <img src="IMAGEN/Hamburguesa.png" alt="Hamburguesa" loading="lazy">
                 <h2>Hamburguesa</h2>
-                <p>"Hamburguesa con carne jugosa, queso derretido, lechuga, tomate y pan crujiente."</p>
+                <p>S/.15.50</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
               </div>
               <div class="menu-item">
-                <img src="IMAGEN/Salchipapa.jpg" alt="Plato 2">
+                <img src="IMAGEN/Salchipapa.png" alt="Salchipapa" loading="lazy">
                 <h2>Salchipapa</h2>
-                <p>"Salchipapa con trozos de salchicha y papas fritas, acompañada de cremas al gusto."</p>
+                <p>S/.10.90</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
               </div>
               <div class="menu-item">
-                <img src="IMAGEN/Pechuga.png" alt="Plato 3">
-                <h2>Plato 3</h2>
-                <p>loma con gaseosa</p>
+                <img src="IMAGEN/Alitas.png" alt="Alitas" loading="lazy">
+                <h2>Alitas</h2>
+                <p>S/.20.90</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+              <div class="menu-item">
+                <img src="IMAGEN/Sandwich.png" alt="Sandwich" loading="lazy">
+                <h2>Sandwich</h2>
+                <p>S/.9.90</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+
+
+            <!------- Bebidas --------->
+            <h3>Bebidas</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <img src="IMAGEN/ChicaMorada.png" alt="ChicaMorada" loading="lazy">
+                <h2>ChicaMorada</h2>
+                <p>S/.7.50</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+              <div class="menu-item">
+                <img src="IMAGEN/Pepsi.png" alt="Pepsi" loading="lazy">
+                <h2>Pepsi</h2>
+                <p>S/.3.90</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+              <div class="menu-item">
+                <img src="IMAGEN/Crush.png" alt="Crush" loading="lazy">
+                <h2>Crush</h2>
+                <p>S/.3.90</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+
+            <!------- Complementos --------->
+            <h3>Complementos</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <img src="IMAGEN/Helado.png" alt="Helado" loading="lazy">
+                <h2>Helado</h2>
+                <p>S/.3.50</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+              <div class="menu-item">
+                <img src="IMAGEN/Papas.png" alt="Papas" loading="lazy">
+                <h2>Papas</h2>
+                <p>S/.4.90</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+              <div class="menu-item">
+                <img src="IMAGEN/TortaDeChocolate.png" alt="Papas" loading="lazy">
+                <h2>Torta De Chocolate</h2>
+                <p>S/.4.90</p>
+                <button class="btn btn-light add-to-cart">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
               </div>
             </div>
           </section>
           
-        
+      <!------------------ RESERVACION -------------------->
         <section class="reservaciones" id="Reservaciones">
             <h2>Reservación</h2>
             <form>
@@ -79,13 +209,13 @@
                   <input type="date" id="fecha" name="fecha" required>
                 </div>
                 <div class="linea">
-                  <label for="personas">Num de personas:</label>
-                  <input type="number" id="personas" name="personas" min="1" max="10" required placeholder="max 10">
+                  <label for="personas">N° de personas:</label>
+                  <input type="number" id="personas" name="personas" min="1" max="15" required placeholder="max 15">
                 </div>
                 <div class="linea">
                   <label for="opciones">Seleccione ubicación:</label>
-                  <select id="opciones" name="opciones">
-                    <option value="opcion1"></option>
+                  <select id="opciones" name="opciones" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
                     <option value="opcion2">Molina</option>
                     <option value="opcion3">Surco</option>
                     <option value="opcion4">Miraflores</option>
@@ -98,6 +228,7 @@
             </form>
         </section>
         
+      <!------------------ LOCALES -------------------->
         <section class="locales" id="Locales">
           <h2>Locales</h2>
           <div class="local-info">
@@ -105,24 +236,45 @@
               <p><i class="bi bi-telephone"></i> 123-456-789</p>
           </div>
           <div class="local-info">
-              <p><i class="bi bi-geo-alt"></i> Dirección: Calle Falsa 123, Ciudad</p>
-              <p><i class="bi bi-telephone"></i> Teléfono: 123-456-789</p>
+              <p><i class="bi bi-geo-alt"></i>  Calle Surco, Ciudad</p>
+              <p><i class="bi bi-telephone"></i>  183-176-009</p>
           </div>
           <div class="local-info">
-              <p><i class="bi bi-geo-alt"></i> Dirección: Calle Falsa 123, Ciudad</p>
-              <p><i class="bi bi-telephone"></i> Teléfono: 123-456-789</p>
+              <p><i class="bi bi-geo-alt"></i>  Calle Falsa 123, Ciudad</p>
+              <p><i class="bi bi-telephone"></i>  123-456-789</p>
           </div>
           <div class="local-info">
-              <p><i class="bi bi-geo-alt"></i> Dirección: Calle Falsa 123, Ciudad</p>
-              <p><i class="bi bi-telephone"></i> Teléfono: 123-456-789</p>
+              <p><i class="bi bi-geo-alt"></i>  Calle Falsa 123, Ciudad</p>
+              <p><i class="bi bi-telephone"></i>  123-456-789</p>
           </div>
           <div id="map"></div>
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
       </section>
     </main>  
 
+    <!------------------ PIE DE PAGINA -------------------->
     <footer>
-        <p>&copy; 2025 Restaurante Wi FooT. Todos los derechos reservados.</p>
-    </footer>
+      <p>&copy; 2025 Wi FooT</p>
+      <div class="redes">
+          <!-- Iconos de redes sociales -->
+          <a href="https://facebook.com" target="_blank" class="boton-f">
+              <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="boton-tw">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="boton-ig">
+              <i class="bi bi-instagram"></i>
+          </a>
+      </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        once: true,
+        duration: 1400
+      }
+    );
+  </script>
 </body>
 </html>

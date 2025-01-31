@@ -89,15 +89,19 @@ h2{
         align-items: center;
         background-color: rgb(229, 183, 153);
         position: absolute;
-        top: 80px; /* Ajusta según la altura del navbar */
+        top: 70px; /* Ajusta según la altura del navbar */
         left: 0;
         padding: 10px 0;
     }
 
     .nav header{
         margin-left: -40px;
-        font-size: 20px;
     }
+
+    .nav header a{
+        font-size: 35px;
+    }
+
 
     .nav-links li {
         margin: 10px 0;
@@ -113,6 +117,10 @@ h2{
     .menu-toggle:checked + .menu-icon + .nav-links {
         display: flex;
     }
+
+    section {
+        scroll-margin-top: 67px;
+        }
 }
 
 

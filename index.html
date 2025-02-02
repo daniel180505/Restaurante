@@ -13,6 +13,7 @@
     
     <!------ HOJAS DE ESTILOS------>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/media.css">
 
     <!------ JS------>
     <script src="JS/index.js"></script>
@@ -254,20 +255,52 @@
 
     <!------------------ PIE DE PAGINA -------------------->
     <footer>
-      <p>&copy; 2025 Wi FooT</p>
-      <div class="redes">
-          <!-- Iconos de redes sociales -->
-          <a href="https://facebook.com" target="_blank" class="boton-f">
-              <i class="bi bi-facebook"></i>
-          </a>
-          <a href="https://twitter.com" target="_blank" class="boton-tw">
-            <i class="bi bi-twitter-x"></i>
-          </a>
-          <a href="https://instagram.com" target="_blank" class="boton-ig">
-              <i class="bi bi-instagram"></i>
-          </a>
+      <div class="footer-section">
+          <h3>Sobre Nosotros</h3>
+          <p>Sabores auténticos, ingredientes frescos y una experiencia culinaria única en cada plato.</p>
       </div>
+      <div class="footer-section">
+          <h3>Enlaces</h3>
+          <a href="#">Inicio</a>
+          <a href="#">Servicios</a>
+          <a href="#">Acerca de</a>
+          <a href="#">Contacto</a>
+      </div>
+      <div class="footer-section">
+          <h3>Contactanos</h3>
+          <p>Email: info@example.com</p>
+          <p>Telefono: +123 456 7890</p>
+          <p>Dirección: Av. Sta. Cruz, Lima 15074</p>
+      </div>
+      <div class="footer-section">
+          <h3>Siguenos</h3>
+          <div class="social-icons">
+              <a href="#" class="boton-f"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="boton-tw"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="boton-ig"><i class="bi bi-instagram"></i></a>
+          </div>
+      </div>
+      <div class="footer-section">
+          <h3>Libro de Reclamaciones</h3>
+          <p>Para cualquier queja o reclamo, por favor haga clic en la imagen:</p>
+          <a href="#">
+              <img src="IMAGEN/libro_reclamaciones.png" alt="Libro de Reclamaciones" class="reclamo-img" loading="lazy">
+          </a>      
+      </div>
+      <hr class="footer-line">
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Wi FooT. Todos los derechos reservados.</p>
+    </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init({
+          once: true,
+          duration: 1400
+      });
+  </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
